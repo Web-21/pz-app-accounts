@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "json-server": "^1.0.0-beta.3",
+    "lite-server": "^2.6.1",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.7.2",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4"
+  },
+  "scripts": {
+    "start:server": "json-server --watch db.json --port 3000",
+    "start:client": "lite-server"
+  }
+}
