@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="./main.css"> -->
+  <title>App-pz</title>
+</head>
+
+<body>
+  <div class="modal-overlay" id="modal">
+    <div class="modal">
+      <button class="close-modal" id="closeModal">X</button>
+      <div id="form-container">
+        <form id="accountForm">
+          <div class="field">
+            <a>Name</a>
+            <input type="text" id="name" required>
+          </div>
+          <div class="field">
+            <a>Account name</a>
+            <input type="text" id="account_name" required>
+          </div>
+          <div class="field">
+            <a>Email</a>
+            <input type="email" id="email" required>
+          </div>
+          <div class="field">
+            <a>Status</a>
+            <select id="status">
+              <option value="Active">Active</option>
+              <option value="Pending">Pending</option>
+              <option value="Disable">Disable</option>
+            </select>
+          </div>
+          <div class="field">
+            <a>Statr date</a>
+            <input type="date" id="start_date" required>
+          </div>
+          <div class="field">
+            <a>Expiration date</a>
+            <input type="date" id="expiration_date" required>
+          </div>
+          <button class="create-btn-submit" type="submit">Save</button>
+        </form>
+        <form id="accountFormEdit">
+          <div class="field">
+            <a>Name</a>
+            <input type="text" id="name1" required>
+          </div>
+          <div class="field">
+            <a>Account name</a>
+            <input type="text" id="account_name1" required>
+          </div>
+          <div class="field">
+            <a>Email</a>
+            <input type="email" id="email1" required>
+          </div>
+          <div class="field">
+            <a>Status</a>
+            <select id="status1">
+              <option value="Active">Active</option>
+              <option value="Pending">Pending</option>
+              <option value="Disable">Disable</option>
+            </select>
+          </div>
+          <div class="field">
+            <a>Statr date</a>
+            <input type="date" id="start_date1" required>
+          </div>
+          <div class="field">
+            <a>Expiration date</a>
+            <input type="date" id="expiration_date1" required>
+          </div>
+          <button class="create-btn-submit" type="submit">Save</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <header>
+    <button class="header-btn logo">
+      <a>WEB-22</a>
+    </button>
+    <button class="header-btn" id="acc">
+      <a>Accounts</a>
+    </button>
+    <button class="header-btn" id="about">
+      <a>About Us</a>
+    </button>
+  </header>
+  <main id="main-block">
+    <div id="heat" class="heat">
+      <div class="list-text">
+        <a>Account List</a>
+      </div>
+      <button id="openModal" class="create-btn"><a>Create account</a></button>
+    </div>
+
+
+
+    <div id="acc-block">
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Account name</th>
+            <th>E-mail</th>
+            <th>Status</th>
+            <th>Start date</th>
+            <th>Expiration date</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="accountTableBody">
+        </tbody>
+      </table>
+    </div>
+    <div id="about-block">
+      <div class="navigation">
+        <a href="#sec1">What is lorem Ipsum?</a>
+        <p></p>
+        <a href="#sec2">Why do we use it?</a>
+        <p></p>
+        <a href="#sec3">Wheare does it come from?</a>
+        <p></p>
+      </div>
+      <div class="content">
+        <a class="title-about">About Us</a>
+        <h1 id="sec1">What is lorem Ipsum?</h1>
+        <a>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+          took a galley of type and scrambled it to make a type specimen book. It has survived not
+          only five centuries, but also the leap into electronic typesetting, remaining essentially
+          unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+          Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio mauris, suscipit ac rhoncus dictum,
+          ullamcorper ut lorem. Proin non tempor nisl. Suspendisse luctus tempus nisi, sit amet egestas mauris congue
+          in. Maecenas facilisis lorem augue, non rutrum libero mollis eget. Pellentesque imperdiet, arcu id fermentum
+          tincidunt, mauris nisi laoreet sem, vel accumsan sem urna vitae sapien. Duis sed diam ut nunc egestas
+          volutpat. Aenean ut diam urna. Maecenas et felis metus. Interdum et malesuada fames ac ante ipsum primis in
+          faucibus. Etiam quam est, molestie malesuada nibh id, lobortis porta tortor. Nullam tristique turpis vitae ex
+          fermentum, nec pellentesque turpis fermentum. Nullam tincidunt, ante ac bibendum dapibus, mi velit suscipit
+          enim, sit amet condimentum est neque id risus. Sed eget dignissim nibh. Nunc id purus massa. Proin malesuada
+          rutrum consectetur. Suspendisse eros sem, iaculis eget ultricies eget, rutrum lacinia velit</a>
+        <h1 id="sec2">Why do we use it?</h1>
+        <a>It is a long established fact that a reader will be distracted by the readable content of a page when looking
+          at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+          opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing
+          packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum'
+          will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by
+          accident, sometimes on purpose (injected humour and the like).Maecenas eget malesuada dolor. Nunc vel ligula
+          et risus euismod sodales vel at nisl. Vivamus id libero hendrerit, tincidunt risus sit amet, pharetra lectus.
+          Curabitur pretium commodo lacus, quis mattis dolor ultrices id. Etiam cursus elit neque, ut scelerisque nisi
+          finibus sit amet. Morbi molestie dignissim quam, vel sagittis ligula aliquam a. Integer non lacus fermentum,
+          gravida eros nec, dapibus quam. Nulla urna dolor, dapibus ut turpis ut, lacinia mattis urna. Praesent non
+          tincidunt leo, eu porta velit. Maecenas aliquet felis sit amet auctor maximus. Etiam nec finibus urna, ac
+          blandit odio. Sed id pharetra ex. Cras nec sollicitudin tellus. Sed vel tortor nibh. Maecenas suscipit vel
+          arcu eget elementum</a>
+        <h1 id="sec3">Wheare does it come from?</h1>
+        <a>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
+          literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
+          College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage,
+          and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem
+          Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and
+          Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the
+          Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section
+          1.10.32.
+
+          The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections
+          1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original
+          form, accompanied by English versions from the 1914 translation by H. Rackham.Nullam non ipsum tellus.
+          Curabitur ut porta risus. Donec quis rhoncus lorem. Sed auctor fringilla felis, id imperdiet diam viverra ut.
+          Fusce nisi ex, tempus at faucibus nec, pretium nec arcu. Nam quam velit, volutpat sed dui vel, interdum
+          ullamcorper tortor. Sed iaculis, dolor ut interdum faucibus, neque ligula vehicula ex, in gravida nunc metus
+          et ante. Cras cursus est et odio mollis convallis. Ut venenatis elit arcu, et tristique dolor vestibulum
+          pellentesque. Pellentesque maximus tristique tristique. Nulla in neque non arcu porta vestibulum nec sed enim.
+          Curabitur placerat ligula ex, eget tempus nulla dictum non. Donec quis finibus nunc. Pellentesque lacinia
+          metus eu tortor scelerisque mollis. Donec tincidunt purus eu justo fringilla, molestie rhoncus nisl
+          tincidunt</a>
+      </div>
+    </div>
+
+  </main>
+  <script src="./dist/bundle.js"></script>
+</body>
+
+</html>
