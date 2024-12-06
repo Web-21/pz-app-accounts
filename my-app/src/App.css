@@ -1,0 +1,157 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  padding: 1rem;
+  background-color: rgb(85, 81, 81); 
+  display: flex;
+}
+.header-btn {
+  margin-left: 5px;
+  font-size: 20px;
+  background-color: rgb(85, 81, 81);
+}
+#acc {
+  border-bottom: 3px solid rgb(243, 159, 3);
+}
+.logo {
+  color: rgb(243, 159, 3);
+  border-radius: 17px;
+  border: 3px solid white;
+}
+table {
+  width: 100%;
+  margin-top: 1rem; 
+  border-collapse: collapse;
+}
+th,
+td { 
+  padding: 0.5rem;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+button {
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border: none;
+}
+button.edit {
+  color: white;
+  background-color: #007bff;
+}
+button.delete {
+  color: white; 
+   background-color: #e02034;
+}
+main {
+  width: 72%;
+  margin: auto;
+}
+.title-about {
+  font-size: 40px;
+}
+#block-about {  
+  justify-content: space-between;
+  display: none;
+}
+.navigation {
+  width: 21%;
+  padding-top: 30px;
+}
+.content {
+  width: 70%;
+  font-size: 18px;
+}
+.navigation>a {
+  text-decoration: none;
+  color: black;
+}
+.heat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.list-text {
+  font-size: 30px;
+}
+.create-btn {
+  background-color: #0469d4;
+  color: rgb(255, 255, 255);
+  height: 42px;
+}
+.window {
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000; 
+  display: none;
+  position: fixed;
+  width: 100%;
+  padding-left: 30%;
+  padding-top: 6%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.modal {
+  width: 500px;
+  height: 500px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+.close {
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  background: red;
+  color: white;
+  border: none;
+  float: right;
+}
+.hidden {
+  display: none;
+}
+#registrationForm {
+  flex-direction: column; 
+  display: flex;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.column>input,
+.column>select {
+  height: 30px;
+}
+.button-subm {
+  height: 30px;
+  align-self: flex-end;
+  margin-top: 20px;
+  width: 70px;
+}
+.active {
+  background-color: rgb(2, 2, 228);
+  color: white;
+}
+.pending {
+  background-color: rgb(247, 6, 6);
+  color: white;
+}
+.disable {
+  background-color: rgb(247, 247, 21);
+  color: black;
+}
+.stat {
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  height: 25px;
+  display: flex;
+}
