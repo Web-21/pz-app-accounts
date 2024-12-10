@@ -1,0 +1,26 @@
+.iav-navbar {
+    background-color: #38383A;
+    padding: 15px 20px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    padding: 5px 0;
+    margin: 0;
+    gap: 50px;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.link.active {
+    color: #CF5D32; 
+    padding-bottom: 5px;
+    border-bottom: 3px solid #CF5D32;
+    border-radius: 5px;
+}
