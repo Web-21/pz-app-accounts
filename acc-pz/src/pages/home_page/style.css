@@ -1,0 +1,74 @@
+.iav-main {
+    width: 100vw;
+}
+
+.iav-container {
+    max-width: 70%;
+    padding: 0 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.iav-create-acc {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.iav-create-acc button {
+    border: none;
+    color: white;
+    background-color: rgb(34, 49, 149);
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.iav-stats {
+    background-color: #CCE9F0;
+    padding: 30px 0 30px 60px;
+    margin: 10px 0;
+}
+
+.iav-btn-cont {
+    display: flex;
+    gap: 5px;
+}
+
+.iav-btn-cont button {
+    border: none;
+    padding: 3px 5px;
+    cursor: pointer;
+    color: white;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.iav-edit-btn {
+    background-color: #1598B2;
+}
+
+.iav-delete-btn {
+    background-color: #606970;
+}
+
+.iav-status {
+    text-transform: capitalize;
+    color: white;
+    border-radius: 3px;
+    padding: 3px 5px;
+    font-weight: bold;
+}
+
+.actived {
+    background-color: #0B6AFE;
+}
+.disable {
+    background-color: #FAB201;
+    color: black;
+}
+
+.pending {
+    background-color: #D82D3E;
+}
+

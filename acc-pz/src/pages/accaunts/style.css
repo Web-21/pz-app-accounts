@@ -1,0 +1,43 @@
+.iav-bg {
+    width: 100vw;
+    height: 20vh;
+    background: rgb(209,37,227);
+    background: radial-gradient(circle, rgba(209,37,227,1) 0%, rgba(29,73,215,1) 49%, rgba(194,64,222,1) 100%);
+}
+
+.iav-data {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.iav-data p{
+    color: red ;
+}
+
+.iav-data p span {
+    color: black ;
+}
+
+.iav-status {
+    text-transform: capitalize;
+    color: white;
+    border-radius: 3px;
+    padding: 3px 5px;
+    font-weight: bold;
+}
+
+.actived {
+    background-color: #0B6AFE;
+}
+.disable {
+    background-color: #FAB201;
+    color: black;
+}
+
+.pending {
+    background-color: #D82D3E;
+}
