@@ -1,6 +1,5 @@
-// AboutUs.tsx
 import React from 'react';
-import './styles.css'; // Підключіть той самий файл стилів
+import './styles.css'; 
 
 const AboutUs: React.FC = () => {
   return (
