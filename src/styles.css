@@ -1,0 +1,194 @@
+/* styles.css */
+
+/* Загальні стилі контейнера */
+.account-list-container {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Заголовок */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Підсумкова панель */
+.summary {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #555;
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/* Таблиця */
+.account-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.account-table thead {
+  background-color: #f5f5f5;
+}
+
+.account-table th {
+  padding: 12px;
+  text-align: left;
+  color: #666;
+  font-weight: 600;
+}
+
+.account-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eaeaea;
+  color: #333;
+}
+
+/* Статуси */
+.status {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.status.active {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status.pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status.disable {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Кнопки дій */
+.account-table .btn {
+  margin: 0 5px;
+  padding: 5px 10px;
+  font-size: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.account-table .btn-primary {
+  background-color: #17a2b8;
+  color: #fff;
+}
+
+.account-table .btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.account-table .btn-primary:hover {
+  background-color: #138496;
+}
+
+.account-table .btn-danger:hover {
+  background-color: #c82333;
+}
+/* About Us Styles */
+.about-us-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about-us-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about-us-container p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.about-us-container a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.about-us-container a:hover {
+  text-decoration: underline;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links li {
+  display: inline-block;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.nav-links a:hover {
+  background-color: #007bff;
+}
