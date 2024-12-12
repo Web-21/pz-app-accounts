@@ -1,0 +1,12 @@
+# Встановити LF для всіх текстових файлів
+* text eol=lf
+
+# Примусово LF для TypeScript, JavaScript, JSON, CSS
+*.ts eol=lf
+*.tsx eol=lf
+*.json eol=lf
+*.css eol=lf
+*.js eol=lf
+
+# Встановити CRLF для специфічних файлів (якщо потрібно)
+*.bat eol=crlf
