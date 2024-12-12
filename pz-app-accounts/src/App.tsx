@@ -1,8 +1,8 @@
 import React from 'react';
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
-import AccountList from './pages/AccountList';
-import AboutUs from './pages/AboutUs';
-import AccountDetails from './pages/AccountDetails';
+import AccountList from './pages/AccountList/AccountList';
+import AboutUs from './pages/AboutUs/AboutUs';
+import AccountDetails from './pages/AccountDetails/AccountDetails';
 import Header from "./components/Header/Header";
 
 const App: React.FC = () => {

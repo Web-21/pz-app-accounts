@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import accountsData from '../db/db.accounts.json';
-import Modal from '../components/Modal/Modal';
+import accountsData from '../../db/db.accounts.json';
+import './AccountList.css';
+import Modal from '../../components/Modal/Modal';
 import { Link } from 'react-router-dom';
 
 const AccountList: React.FC = () => {
@@ -8,7 +9,6 @@ const AccountList: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [editAccount, setEditAccount] = useState<any>(null);
 
-  // Функція збереження акаунта
   const handleSave = (data: any) => {
     if (editAccount) {
       setAccounts(accounts.map(acc => (acc.id === editAccount.id ? { ...acc, ...data } : acc)));
@@ -16,29 +16,26 @@ const AccountList: React.FC = () => {
       const newAccount = { ...data, id: (accounts[accounts.length - 1].id) + 1, status: "Active"}; // Генеруємо ID для нового акаунта
       setAccounts([...accounts, newAccount]);
     }
-    setEditAccount(null); // Скидаємо стан для редагування акаунта
+    setEditAccount(null);
   };
 
-  // Функція редагування акаунта
   const handleEdit = (account: any) => {
-    setEditAccount(account); // Встановлюємо акаунт для редагування
-    setIsModalOpen(true); // Відкриваємо модальне вікно
+    setEditAccount(account);
+    setIsModalOpen(true);
   };
 
-  // Функція для видалення акаунта
   const handleDelete = (id: number) => {
     setAccounts(accounts.filter(acc => acc.id !== id));
   };
 
-  // Відкриття модального вікна для створення нового акаунта
   const handleCreate = () => {
-    setEditAccount(null); // Очистити поля для нового акаунта
-    setIsModalOpen(true); // Відкрити модальне вікно
+    setEditAccount(null);
+    setIsModalOpen(true);
   };
 
   return (
     <div className="container">
-      <div className="d-flex justify-content-between my-3 me-1">
+      <div className="d-flex justify-content-between align-items-center my-3 me-1">
         <h1>Accounts</h1>
         <button className="btn btn-primary" onClick={handleCreate}>Create Account</button>
       </div>
@@ -59,7 +56,7 @@ const AccountList: React.FC = () => {
         {accounts.map(account => (
           <tr key={account.id}>
             <th scope="row">{account.id}</th>
-            <td><Link to={`/account/${account.id}`}>{account.name}</Link></td>
+            <td><Link to={`/account/${account.id}`} className={"text-black"}>{account.name}</Link></td>
             <td>{account.account_name}</td>
             <td>{account.email}</td>
             <td>

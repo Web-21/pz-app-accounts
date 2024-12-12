@@ -1,0 +1,45 @@
+import React from 'react';
+import './AboutUs.css'
+
+const AboutUs: React.FC = () => {
+  return (
+    <>
+      <div className="container mt-3">
+        <h1>About Us</h1>
+        <div className="clearfix">
+          <div className="sidebar">
+            <ul>
+              <li><a href="#what-is-lorem">What is Lorem Ipsum?</a></li>
+              <li><a href="#why-use">Why do we use it?</a></li>
+              <li><a href="#origin">Where does it come from?</a></li>
+            </ul>
+          </div>
+          <div className="content">
+            <section id="what-is-lorem">
+              <h2>What is Lorem Ipsum?</h2>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet architecto consequatur cupiditate dicta dolor dolorem facilis impedit in magnam minus modi, neque quidem quo ratione repellendus repudiandae sapiente veniam?</span><span>Architecto asperiores at corporis dolore eius ex harum in incidunt laboriosam, nemo nihil officiis quas quis reprehenderit similique sint, sunt temporibus voluptatum? Ex exercitationem fuga molestiae molestias nisi omnis perferendis.</span><span>Ipsam necessitatibus odio perspiciatis voluptas. Ad enim nostrum quisquam. A ab aperiam aspernatur, aut dolorum ea eum excepturi exercitationem incidunt inventore, minima nostrum officiis omnis quae repellat soluta, voluptates voluptatibus!</span><span>Aliquam aperiam architecto doloremque earum facilis fugit, id, ipsa maxime minus molestias nihil odio officia optio possimus vitae! Alias aliquid asperiores blanditiis deserunt harum illum necessitatibus porro quam quibusdam voluptates!</span><span>Amet at atque error et neque nostrum numquam quibusdam. Adipisci consectetur dignissimos doloremque ipsum laudantium, odit sint sit temporibus ut voluptas. Ea excepturi laudantium molestiae rem? Dolore doloribus exercitationem voluptatem!</span><span>Alias aperiam assumenda aut autem beatae consequuntur corporis delectus eaque error eum eveniet excepturi expedita illo incidunt, magnam nihil nostrum perspiciatis quasi quisquam quod quos sed, tempore voluptatem? Animi, placeat!</span><span>Aliquid asperiores autem delectus ea eius enim error ex, facilis fugiat iste labore laboriosam molestiae neque perspiciatis, quisquam quo recusandae reprehenderit sunt suscipit, ut. Iusto nobis possimus quia rerum tenetur!</span><span>Eum hic ipsum itaque nam perspiciatis, placeat recusandae tenetur. Ab ratione, rem. Beatae, debitis dicta esse est eveniet in itaque laboriosam laudantium molestiae quidem quis quisquam quos reiciendis, tempore, voluptatibus!</span><span>Accusantium est, ex minima nisi placeat quis! Aspernatur dolorem fugit hic impedit inventore magnam natus nisi optio quam qui soluta, velit, voluptatum? Adipisci exercitationem laborum, maiores minus mollitia nesciunt temporibus!</span><span>Ad eveniet incidunt magnam maiores nam nesciunt nobis pariatur quaerat temporibus totam. Consectetur corporis, deserunt distinctio error nihil perferendis quas quasi? Dicta dolorum eius illo, magnam maiores officia tempore totam?</span>
+              </p>
+            </section>
+            <section id="why-use">
+              <h2>Why do we use it?</h2>
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                of letters. <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad aspernatur illo quam, reprehenderit veniam. Consequatur dolores ex excepturi ipsa iusto minima molestias, necessitatibus neque reiciendis tempore velit voluptatem, voluptatibus.</span><span>Dignissimos excepturi exercitationem hic impedit magnam rem veniam voluptas voluptate. Aperiam beatae corporis deserunt ea nemo neque nobis provident quaerat quas qui quibusdam quisquam rem, saepe, sequi tempora tempore veritatis?</span><span>Et impedit ipsa, ipsum magni pariatur rem veritatis? Assumenda blanditiis deleniti dolore eos, eveniet ex facilis modi natus non obcaecati pariatur quae quasi recusandae saepe similique, sunt totam vel vero.</span><span>A accusamus amet asperiores consectetur cupiditate deserunt dicta distinctio dolores ea error facilis fugiat incidunt ipsum maxime minima molestiae mollitia obcaecati officia quaerat quo, rerum sequi sunt totam vel voluptatibus.</span><span>Adipisci, beatae blanditiis, consequatur dicta dolores eaque eius error facere, harum laborum nihil nostrum perferendis quae quam quod reiciendis rerum sequi soluta temporibus totam! Eligendi, similique, tempore. Corporis quo, repellat!</span><span>Accusamus dicta exercitationem id quaerat. Ab, amet autem consectetur dolorem doloremque dolorum error explicabo ipsam maiores nesciunt nisi officiis pariatur sequi. Atque dicta earum hic, magnam maiores possimus quas vel.</span><span>Ad aperiam asperiores deserunt dolorem facere facilis, illo impedit itaque labore maxime nam nobis perspiciatis porro recusandae repellendus sed sunt. Alias eum exercitationem harum impedit nesciunt reiciendis saepe soluta vitae?</span><span>Ad atque, aut blanditiis deleniti dignissimos ducimus eos esse est excepturi expedita id iusto laborum laudantium modi molestias natus non officiis quae quos recusandae reiciendis repellendus suscipit totam vitae voluptate?</span><span>Ad aliquam at beatae consequuntur culpa deserunt eligendi incidunt iusto laudantium modi neque nostrum, pariatur quod ratione reprehenderit, suscipit ut velit voluptas voluptate, voluptatibus! Aspernatur est iste libero ratione veritatis.</span><span>Accusantium aliquam assumenda commodi doloremque ex in labore natus quae quisquam repellendus! Alias aspernatur debitis iste libero minima quas reprehenderit similique. Aspernatur cum eligendi iure molestiae natus, officiis repudiandae sunt.</span>
+              </p>
+            </section>
+            <section id="origin">
+              <h2>Where does it come from?</h2>
+              <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+                Latin literature from 45 BC, making it over 2000 years old. <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consequatur culpa dicta excepturi expedita, fugit, illum maiores molestiae perferendis praesentium quibusdam quisquam totam velit. Animi esse quas quisquam recusandae voluptas!</span><span>Asperiores assumenda cupiditate dolorem eos facere labore possimus totam voluptatibus! Aliquid amet animi architecto beatae commodi corporis esse explicabo fugiat illo, ipsa laudantium molestias, nam nihil omnis optio placeat velit!</span><span>Blanditiis dignissimos dolorem fuga inventore laudantium non numquam reprehenderit tempora temporibus vero. Alias, earum, obcaecati. Aut cum cumque earum est harum, illo, incidunt, ipsum nostrum quasi quo quod repellendus vel.</span><span>Alias architecto commodi, corporis deleniti deserunt dignissimos dolores eos explicabo incidunt ipsam, magnam nemo neque nostrum quam, quisquam sunt ullam voluptatem voluptatibus! Adipisci ex facere iure, nulla qui sapiente voluptate?</span><span>Commodi esse harum incidunt itaque nulla obcaecati officia praesentium quia quisquam sunt? Accusamus aspernatur autem et maxime nostrum obcaecati provident quas. Accusamus eos, fugiat fugit illo quos repellendus ut voluptatum.</span><span>Assumenda blanditiis dolor dolore nihil soluta! Aliquid architecto consectetur cupiditate dignissimos doloremque error excepturi explicabo ipsa minus similique? Ab consequatur debitis doloribus facilis fugit quia, quo repellat ullam velit voluptas!</span><span>Accusamus consectetur cumque debitis doloribus eligendi exercitationem illum itaque nisi, odio officia possimus, repellat sint vero vitae voluptates. Facilis iure laborum nihil nobis non quibusdam totam. Eius fugit iure labore?</span><span>Deleniti dolorem doloremque dolores ea eum labore, nemo numquam optio perferendis sequi. Aliquid assumenda, consequatur dolorem ea explicabo inventore ipsum obcaecati odio officiis placeat possimus recusandae reiciendis, rem sapiente vero!</span><span>Accusantium ad commodi culpa dicta dolore, doloremque dolorum hic ipsa ipsam labore, maiores molestias nesciunt nisi nobis optio praesentium saepe similique sunt unde voluptas? Consequatur labore modi officiis soluta voluptas?</span><span>A alias culpa eligendi eveniet expedita illo inventore neque, numquam obcaecati provident quasi sint, tenetur, voluptatum. Autem culpa eum libero nostrum officia perspiciatis praesentium quos. Assumenda dolore eos incidunt sit.</span>
+              </p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default AboutUs;
