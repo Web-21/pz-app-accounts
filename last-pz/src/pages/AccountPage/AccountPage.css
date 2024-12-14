@@ -1,0 +1,9 @@
+.gradient{
+  min-height: 100px;
+  background: rgb(2,0,36);
+  background: linear-gradient(357deg, rgba(2,0,36,1) 0%, rgba(153,110,45,1) 0%, rgba(144,136,42,1) 72%);
+}
+
+.account-header{
+  text-align: start;
+}
